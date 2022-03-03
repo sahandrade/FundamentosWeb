@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="fale-conosco.css" />
+    <title>Acessibilidade Digital</title>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul class="container-nav-list">
+                    <li><a href="/components/home/home.html" class="nav-item">Home</a></li>
+                    <li><a href="/components/educacao/educacao.html" class="nav-item">Educação</a></li>
+                    <li><a href="/components/fale-conosco/fale-conosco.html" class="nav-item">Fale Conosco</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="bg-form">
+        <form name="faleConoscoForm" action="#"  target="_blank" autocomplete="off" >
+            <table class="conteudo-form">
+                <thead class="header-container">
+                    <tr>
+                        <th colspan="2" class="pb-2">Fale Conosco</th>
+                    </tr>
+                    <tr>
+                        <th colspan="2" class="pb-2">Seu contato é muito importante para nós.
+                            Preencha os campos abaixo e te retornaremos em breve.
+                        </th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <td class="container-label"><label for="nome" class="mb-1">Nome:</label></td>
+                        <td>
+                            <input id="nome" name="nome" type="text" required class="input-text"
+                                placeholder="Insira seu nome">
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td class="container-label"><label for="tel" class="mb-1">Telefone:</label></td>
+                        <td>
+                            <input id="tel" name="tel" type="tel" required class="input-text"
+                                placeholder="(DD) 0000-0000" title="(DD) 0000-0000" pattern="^\([1-9]{2}\) (?:[2-8]|9[1-9])[0-9]{3}\-[0-9]{4}$">
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td class="container-label"><label for="email">E-mail:</label></td>
+                        <td>
+                            <input id="email" name="email" type="email" required class="input-text"
+                                placeholder="Insira seu e-mail">
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td class="container-label"><label for="sitesAcessivel">Porcentagem de sites acessíveis que você conhece</label></td>
+                        <td class="d-flex">
+                            <input id="sitesAcessivel" value="0" type="range" name="sitesAcessivel" min="0" max="100" 
+                                oninput="this.nextElementSibling.value = this.value" class="w-85">
+                            <output id="valueSites">0</output>
+                            <label for="valueSites">%</label>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td class="container-label"><label for="sexos">Sexo:</label></td>
+                        <td class="align-items-left">
+                            <input list="sexo" name="sexo" id="sexos" class="input-sexo" placeholder="Selecione o sexo">
+                                <datalist id="sexo">
+                                    <option value="feminino">
+                                    <option value="masculino">
+                                    <option value="outros">
+                                </datalist>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td colspan="2">
+                            <label>Você conhece ou possui alguma limitação física?</label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">
+                            <input type="radio" id="conhece" value="true" name="conhece">
+                            <label for="conhece">Sim, eu conheço</label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">
+                            <input type="radio" id="naum_conhece" value="false" name="conhece">
+                            <label for="naum_conhece">Não, eu não conheço</label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">
+                            <input type="radio" id="possui" value="true" name="possui">
+                            <label for="possui">Sim, eu possuo</label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">
+                            <input type="radio" id="naum_possui" value="false" name="possui">
+                            <label for="naum_possui">Não, eu não possuo</label>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td colspan="2" class="container-label">
+                            <label for="televisao">Qual(is) ou meio(s) de comunicação você acha que falta(m) acessibilidade?</label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2"><input id="televisao" type="checkbox" name="carencia" value="televisao"><label for="televisao">Televisão</label></td>
+                    </tr>
+                    <tr>
+                        <td colspan="2"><input id="jornal" type="checkbox" name="carencia" value="jornal"><label for="jornal">Jornal</label></td>
+                    </tr>
+                    <tr>
+                        <td colspan="2"><input id="revista" type="checkbox" name="carencia" value="revista"><label for="revista">Revista</label></td>
+                    </tr>
+                    <tr>
+                        <td colspan="2"><input id="radio" type="checkbox" name="carencia" value="radio"><label for="radio">Rádio</label></td>
+                    </tr>
+                    <tr>
+                        <td colspan="2"><input id="podcast" type="checkbox" name="carencia" value="podcast"><label for="podcast">Podcast</label></td>
+                    </tr>
+                    <tr>
+                        <td colspan="2"><input id="cinema" type="checkbox" name="carencia" value="cinema"><label for="cinema">Cinema</label></td>
+                    </tr>
+                    <tr>
+                        <td colspan="2"><input id="game" type="checkbox" name="carencia" value="game"><label for="game">Video-games</label></td>
+                    </tr>
+                    <tr>
+                        <td colspan="2"><input id="internet" type="checkbox" name="carencia" value="internet"><label for="internet">Internet</label></td>
+                    </tr>
+                    <tr>
+                        <td class="container-label"><label for="assunto" >Assunto</label></td>
+                        <td class="align-items-left">
+                            <select id="assunto" name="assunto">
+                                <option value="Reclamações">Reclamações</option>
+                                <option value="Sugestões">Sugestões</option>
+                                <option value="Dúvidas">Dúvidas</option>
+                                <option value="Denúncia">Denúncia</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2" class="container-label"><label for="comentario">Comentários</label></td>
+                    </tr>
+                    <tr>
+                        <td colspan="2"><textarea class="input-text text-area" id="comentario" name="comentario" required maxlength="255" minlength="10"></textarea></td>
+                    </tr>
+                </tbody>
+
+                <tfoot>
+                    <tr>
+                        <td>
+                            <button type="reset">Limpar</button>
+                        </td>
+                        <td>
+                            <button type="submit">Enviar</button>
+                        </td>
+                    </tr>
+                </tfoot>
+            </table>
+        </form>
+    </div>
+</body>
+</html>
+

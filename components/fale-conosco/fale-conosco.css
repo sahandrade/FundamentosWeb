@@ -1,0 +1,184 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+header {
+    padding: 15px 8px;
+}
+
+body {
+    font-family: 'Raleway', 'LemonSans-Light', Arial, Helvetica, sans-serif;
+}
+
+ul.container-nav-list {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: end;
+    padding: 4px 8px;
+}
+
+ul {
+    list-style-type: none;
+}
+
+ul li {
+    display: inline;
+}
+
+a {
+    display: block;
+    text-decoration: none;
+}
+
+.nav-item {
+    padding: 4px 20px !important;
+    font-size: 1.4em;
+    font-weight: 600;
+    
+}
+
+.container-conteudo{
+    height: 90vh;
+    width: 100%;
+    background-color: #f6eee1;
+    color: #2d2351;
+}
+
+.box-text {
+    line-height: 3.3em;
+    width: 50%;
+    margin: 0 auto;
+    padding: 8%;
+}
+
+h1 {
+    font-size: 4.2em;
+    margin-bottom: 0.5em;
+    text-transform: uppercase;
+}
+
+p {
+    font-size: 2em;
+}
+
+div.box-link{
+    display: flex;
+    justify-content: end;
+}
+
+a.link-conteudo {
+    color:#00b1a1;
+    font-size: 1.5em;
+}
+
+
+.container-footer {
+    background-color: #ffffff;
+}
+
+.box-footer {
+    margin: 16px 24px;
+}
+
+.img-bg {
+    background-image: url('https://static.whow.com.br/wp-content/uploads/2020/11/acessibilidade-digital-1.jpg');
+    background-repeat: no-repeat;
+    background-size: 100% 50vh;
+    background-position: center;
+    width: 100%;
+    height: 50vh;
+    background-color: rgba(70,121,4,255);
+    border-image-slice: fill;
+
+}
+
+.invisible{
+    visibility: hidden;
+}
+
+.bg-form {
+    height: 200vh;
+    width: 100%;
+    background-image: url("/assets/bg-form.jpg");
+    background-size: 120% 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    opacity: 1;
+}
+
+table.conteudo-form {
+    opacity: 1;
+    margin: auto auto;
+    width: 50%;
+    background-color: #00b1a1;
+    opacity: 0.9;
+    padding: 2em;
+    border-radius: 5px;
+}
+
+.pb-2 {
+    padding-bottom: 8px;
+}
+
+.header-container {
+    padding-top: 20em;
+    text-align: left;
+}
+
+td{
+    padding: 10px;
+}
+
+td.container-label {
+    max-width: 162px;
+}
+
+input{
+    border: 0;
+    font-size: 0.725rem;
+    padding: 4px 4px;
+    margin: 0 4px;  
+    border-radius: 2px;
+}
+
+
+.input-text{
+    width: 100%;
+}
+
+.input-sexo:hover, .input-sexo:focus {
+    background-image: url("/assets/60995.png");
+    background-repeat: no-repeat;
+    background-position: 95%;
+    background-size: 8%;
+}
+
+.input-sexo {
+    height: 100%;
+    padding-right: 5px;
+}
+
+.text-area{
+    height: 10em;
+    border: 0;
+    border-radius: 5px;
+}
+
+.align-items-left{
+    display: flex; 
+    justify-content: end;
+}
+
+.d-flex{
+    display: flex; 
+    flex-wrap: nowrap;
+    width: 100%;
+}
+
+.w-85{
+    width: 85%;
+    margin-right: auto;
+}
+
